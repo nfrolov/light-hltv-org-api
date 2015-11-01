@@ -1,0 +1,14 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "quotes": [2, "single", "avoid-escape"],
+    "no-underscore-dangle": [0],
+    "yoda": [0],
+    "no-use-before-define": [2, "nofunc"],
+    "strict": [2, "global"],
+    "no-undef": [2]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "engines": {
+    "node": "5.x"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha -C -R dot"
+  },
+  "dependencies": {
+    "boom": "^3.0.0",
+    "hapi": "^11.1.0",
+    "joi": "^7.0.0",
+    "mongoose": "^4.2.4",
+    "shortid": "^2.2.4"
+  },
+  "devDependencies": {
+    "code": "^2.0.1",
+    "gulp": "^3.9.0",
+    "gulp-watch": "^4.3.5",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.2"
+  }
+}
