@@ -7,7 +7,7 @@ const MONGODB_URI = process.env.MONGOLAB_URI || process.env.MONGODB_URI;
 const HTTP_PORT = process.env.PORT || 3000;
 
 const server = new Hapi.Server({
-  debug: false
+  debug: module.parent ? false : undefined,
 });
 
 server.connection({port: HTTP_PORT});
