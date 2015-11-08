@@ -8,6 +8,11 @@ const HTTP_PORT = process.env.PORT || 3000;
 
 const server = new Hapi.Server({
   debug: module.parent ? false : undefined,
+  connections: {
+    routes: {
+      cors: true
+    }
+  }
 });
 
 server.connection({port: HTTP_PORT});
