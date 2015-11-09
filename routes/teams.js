@@ -65,7 +65,7 @@ module.exports = [
     handler: function (req, reply) {
       const id = req.params.id;
       Team.findByIdAndUpdate(id, req.payload,
-        {new: true, upsert: true, overwrite: true},
+        {new: true, upsert: true, overwrite: true, populate: 'players'},
         (err, team) => {
           if (err) {
             req.log(['error', 'db'], err);
